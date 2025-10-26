@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot - StorefrontApplication (default)",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.dio.storefront.StorefrontApplication",
+      "projectName": "storefront",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot - Storefront (devtools)",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.dio.storefront.StorefrontApplication",
+      "projectName": "storefront",
+      "vmArgs": "-Dspring.profiles.active=dev",
+      "args": "",
+      "env": {
+        "SPRING_PROFILES_ACTIVE": "dev"
+      }
+    }
+  ]
+}
